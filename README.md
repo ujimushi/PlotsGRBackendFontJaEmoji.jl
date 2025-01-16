@@ -1,0 +1,2 @@
+# PlotsGRBackendFontJaEmoji.jl
+Plots.jlのGRバックエンドで日本語と絵文字を手軽に使える環境を提供します
