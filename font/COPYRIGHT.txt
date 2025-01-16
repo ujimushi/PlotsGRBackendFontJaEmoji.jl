@@ -1,0 +1,45 @@
+[Hack]
+Copyright (c) 2018 Source Foundry Authors / Copyright (c) 2003 by Bitstream, Inc. All Rights Reserved.
+
+[Source Han Sans]
+Copyright (c) 2014, 2015 Adobe Systems Incorporated (http://www.adobe.com/), with Reserved Font Name 'Source'.
+
+[M+ OUTLINE FONTS]
+Copyright(c) 2015 M+ FONTS PROJECT
+
+[DejaVu Sans Mono]
+Copyright (c) 2003 by Bitstream, Inc. All Rights Reserved.
+DejaVu changes are in public domain
+
+[DevIcons]
+MIT (c) @vorillaz (https://github.com/vorillaz/devicons)
+
+[Powerline Extra Symbols]
+MIT (c) Ryan L McIntyre (https://github.com/ryanoasis/powerline-extra-symbols)
+
+[Font Awesome]
+Copyright Dave Gandy 2016. All rights reserved.
+
+[Font Awesome Extension]
+(https://github.com/AndreLZGava/font-awesome-extension)
+
+[Octicons]
+MIT (c) GitHub, Inc.
+
+[IEC Power Symbols]
+MIT (c) @jloughry (https://github.com/jloughry/Unicode)
+
+[Poweline Symbols]
+(https://github.com/powerline/powerline)
+
+[Seti-UI + Custom]
+Copyright (c) 2014 Jesse Weed
+
+[Icons for Devs]
+(https://github.com/mirmat/iconsfordevs)
+
+[Noto Emoji]
+Copyright 2013 Google Inc. All Rights Reserved.
+
+[Cica]
+Copyright (c) 2018, Takahiro Minami (https://tmnm.tech)
