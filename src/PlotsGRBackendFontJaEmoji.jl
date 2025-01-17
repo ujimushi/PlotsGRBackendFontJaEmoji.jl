@@ -24,6 +24,22 @@ export FONT_JA_EMOJI, plots_gr_register_user_font
 const FONT_JA_EMOJI = "cica"
 
 
+function _get_plot_gr_module()
+    _mod = if isdefined(Plots, :gr_font_family)
+        Plots
+    elseif isdefined(Plots, :PlotsBase) &&
+        isdefined(Plots.PlotsBase, :get_backend_module)
+        _t = Plots.PlotsBase.get_backend_module(:GR)
+        isnothing(_t) ? nothing : _t[1]
+    else
+        nothing
+    end
+    if isnothing(_mod)
+        @info "GRモジュールが見つかりませんでした"
+    end
+    _mod
+end
+
 """
     plots_gr_register_user_font(fontname, fontpath)
 
@@ -36,10 +52,12 @@ const FONT_JA_EMOJI = "cica"
 function plots_gr_register_user_font(fontname::AbstractString,
                                      fontpath::AbstractString)
     font_id = lowercase(fontname)
-    if !haskey(Plots.gr_font_family, font_id)
-        gff_id = Plots.GR.loadfont(fontpath)
+    _module = _get_plot_gr_module()
+    if isnothing(_module) return end
+    if !haskey(_module.gr_font_family, font_id)
+        gff_id = GR.loadfont(fontpath)
         if gff_id > 0
-            Plots.gr_font_family[font_id] = gff_id
+            _module.gr_font_family[font_id] = gff_id
         else
             @info "「$fontname」の登録に失敗しました"
         end
