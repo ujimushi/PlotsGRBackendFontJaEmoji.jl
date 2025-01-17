@@ -13,10 +13,16 @@ using Pkg
 Pkg.add(url="https://github.com/ujimushi/PlotsGRBackendFontJaEmoji.jl")
 ```
 
+## 利用フォント
+
+[Cica Font](https://github.com/miiton/Cica)を利用しています。
+利用にあたっては`font`フォルダの中ある`LICENSE.txt`に記されているライセンス内容をご確認ください。
+`Cica Font`自体のライセンスは`SIL Open Font License v1.1`です。
+
 ## 利用例
 
 `using PlotsGRBackendFontJaEmoji`だけで日本語と絵文字が利用できます。
-パッケージに添付している[Cica Font](https://github.com/miiton/Cica)を利用しています。
+このパッケージに添付している[Cica Font](https://github.com/miiton/Cica)を利用しています。
 
 ```julia
 using Plots
